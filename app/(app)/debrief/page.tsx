@@ -145,8 +145,9 @@ export default function DebriefPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
+<CardContent>
               <ul className="space-y-2">
-                {(isFullDebrief ? debrief.top_blockers : [debrief.top_blockers?.[0]]).map(
+                {(isFullDebrief ? debrief.top_blockers || [] : [debrief.top_blockers?.[0]].filter(Boolean)).map(
                   (blocker, i) =>
                     blocker && (
                       <li key={i} className="flex items-start gap-2">
