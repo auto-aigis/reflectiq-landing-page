@@ -8,9 +8,9 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Badge } from "../../components/ui/badge";
-import { useAuth } from "../_components/AuthProvider";
-import { journalApi, debriefApi, paymentsApi } from "../_lib/api";
-import type { JournalEntry, Debrief, DebriefPending } from "../_lib/types";
+import { useAuth } from "../../_components/AuthProvider";
+import { journalApi, debriefApi, paymentsApi } from "../../_lib/api";
+import type { JournalEntry, Debrief, DebriefPending } from "../../_lib/types";
 import { FileText, TrendingUp, ArrowRight, Loader2 } from "lucide-react";
 
 function DashboardContent() {

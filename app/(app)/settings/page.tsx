@@ -9,8 +9,8 @@ import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
 import { Badge } from "../../components/ui/badge";
-import { useAuth } from "../_components/AuthProvider";
-import { settingsApi, exportApi } from "../_lib/api";
+import { useAuth } from "../../_components/AuthProvider";
+import { settingsApi, exportApi } from "../../_lib/api";
 import { User, Mail, Download, CreditCard, ExternalLink, Loader2 } from "lucide-react";
 
 export default function SettingsPage() {

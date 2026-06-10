@@ -8,9 +8,9 @@ import { Button } from "../../components/ui/button";
 import { Textarea } from "../../components/ui/textarea";
 import { Label } from "../../components/ui/label";
 import { Badge } from "../../components/ui/badge";
-import { useAuth } from "../_components/AuthProvider";
-import { journalApi, exportApi } from "../_lib/api";
-import type { JournalEntry } from "../_lib/types";
+import { useAuth } from "../../_components/AuthProvider";
+import { journalApi, exportApi } from "../../_lib/api";
+import type { JournalEntry } from "../../_lib/types";
 import Link from "next/link";
 
 export default function JournalPage() {

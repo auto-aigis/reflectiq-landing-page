@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Badge } from "../../components/ui/badge";
-import { useAuth } from "../_components/AuthProvider";
-import { debriefApi, exportApi } from "../_lib/api";
-import type { Debrief } from "../_lib/types";
+import { useAuth } from "../../_components/AuthProvider";
+import { debriefApi, exportApi } from "../../_lib/api";
+import type { Debrief } from "../../_lib/types";
 import type { Debrief, DebriefPending, RegenerationCount } from "@/app/_lib/types";
 import { Loader2, RefreshCw, AlertCircle, TrendingUp, Target, Zap, Lock } from "lucide-react";
 
