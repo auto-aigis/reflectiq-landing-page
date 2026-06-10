@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AuthProvider, useAuth } from "../_components/AppShell";
+import { AuthProvider, useAuth } from "../_components/AuthProvider";
 import { Button } from "../components/ui/button";
 import { 
   Home, 

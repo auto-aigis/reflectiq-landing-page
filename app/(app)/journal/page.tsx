@@ -12,6 +12,7 @@ import { useAuth } from "../../_components/AuthProvider";
 import { journalApi, exportApi } from "../../_lib/api";
 import type { JournalEntry } from "../../_lib/types";
 import Link from "next/link";
+import { Download, Flame, Plus, FileText, Trash2 } from "lucide-react";
 
 export default function JournalPage() {
   const { user } = useAuth();
