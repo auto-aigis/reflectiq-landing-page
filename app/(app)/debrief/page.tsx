@@ -143,9 +143,8 @@ export default function DebriefPage() {
                 <Target className="w-5 h-5" />
                 Top Blockers
               </CardTitle>
-            </CardHeader>
+</CardHeader>
             <CardContent>
-<CardContent>
               <ul className="space-y-2">
                 {(isFullDebrief ? debrief.top_blockers || [] : [debrief.top_blockers?.[0]].filter(Boolean)).map(
                   (blocker, i) =>
@@ -159,7 +158,6 @@ export default function DebriefPage() {
               </ul>
             </CardContent>
           </Card>
-
           {isFullDebrief && debrief.behavioral_pattern_alert && (
             <Card className="border-purple-200 bg-purple-50">
               <CardHeader>
