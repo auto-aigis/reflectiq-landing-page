@@ -5,12 +5,12 @@ export const dynamic = "force-dynamic";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { authApi } from "@/app/_lib/api";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import { Checkbox } from "../components/ui/checkbox";
+import { authApi } from "../_lib/api";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");

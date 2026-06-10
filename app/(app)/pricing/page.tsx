@@ -4,13 +4,12 @@ export const dynamic = "force-dynamic";
 
 import { useEffect, useState, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { useAuth } from "@/app/_components/AuthProvider";
-import { paymentsApi } from "@/app/_lib/api";
-import { Check, CreditCard, Sparkles, Crown, Zap } from "lucide-react";
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import { Badge } from "../../components/ui/badge";
+import { useAuth } from "../_components/AuthProvider";
+import { paymentsApi } from "../_lib/api";
 import Link from "next/link";
 
 const PRICING_TIERS = [

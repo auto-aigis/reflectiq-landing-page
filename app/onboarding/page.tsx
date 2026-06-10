@@ -4,19 +4,19 @@ export const dynamic = "force-dynamic";
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { onboardingApi, authApi } from "@/app/_lib/api";
-import type { Domain, TypicalBlocker } from "@/app/_lib/types";
+} from "../components/ui/select";
+import { onboardingApi, authApi } from "../_lib/api";
+import type { Domain, TypicalBlocker } from "../_lib/types";
 
 const DOMAINS: Domain[] = ["work", "health", "relationships", "finances", "learning"];
 const BLOCKERS: TypicalBlocker[] = ["procrastination", "perfectionism", "distraction", "avoidance", "other"];
